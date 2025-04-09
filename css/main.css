@@ -29,7 +29,7 @@ header .banner {
   position: absolute;
   top: 75%;
   left: 24px;
-  transform: translate(-50%);
+  transform: translateY(-50%);
   z-index: 2;
   margin: 0;
 }
@@ -78,13 +78,13 @@ main {
   z-index: 0;
 }
 
-.quiz-cards .cards-img {
+.quiz-cards .card-img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   position: relative;
 }
-.quiz-cards .cards-img::before {
+.quiz-cards .card-img::before {
   content: "";
   position: absolute;
   top: 0;
@@ -103,6 +103,7 @@ main {
   font-size: 24px;
   margin: 0;
 }
+
 .quiz-cards .card-content {
   padding: 12px;
 }
@@ -127,9 +128,30 @@ main {
   border-radius: 5px;
   font-size: 14px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Плавный эффект изменения цвета фона */
+  transition: background-color 0.3s ease;
+  background-color: #0369a1;
 }
 
 .card-footer button:hover {
-  background-color: #0369a1; /* Меняется цвет кнопки при наведении */
+  background-color: #0369a1;
 }
+
+.quiz-options {
+}
+
+.quiz-options .quiz-option {
+  display: block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.quiz-option input[type="radio"] {
+  margin-right: 8px;
+}
+
+.quiz-points {
+  font-size: 14px;
+}
+
+
+na
